@@ -3,198 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Warrier Stuff</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(135deg, #1e1e1e, #3e3e3e);
-            color: #eee;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #222;
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #444;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 3em;
-            color: #ffcc00;
-            letter-spacing: 2px;
-            animation: glow 2s infinite alternate;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background: #333;
-            padding: 10px;
-        }
-        nav a {
-            color: #ffcc00;
-            text-decoration: none;
-            margin: 0 15px;
-            font-size: 1.2em;
-            transition: color 0.3s;
-            animation: glow 2s infinite alternate;
-        }
-        nav a:hover {
-            color: #fff;
-        }
-        section {
-            padding: 40px;
-            text-align: center;
-            animation: slideIn 1.5s;
-        }
-        section h2 {
-            font-size: 2.5em;
-            color: #ffcc00;
-            border-bottom: 2px solid #ffcc00;
-            display: inline-block;
-            margin-bottom: 20px;
-        }
-        .content {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        .content p {
-            font-size: 1.2em;
-            margin-bottom: 20px;
-            line-height: 1.6;
-        }
-        .content ul {
-            list-style: none;
-            padding: 0;
-        }
-        .content li {
-            background: #444;
-            margin: 10px 0;
-            padding: 10px 20px;
-            border-radius: 5px;
-            transition: background 0.3s;
-        }
-        .content li:hover {
-            background: #555;
-        }
-        .contact-form {
-            background: #444;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 20px;
-        }
-        .contact-form label {
-            grid-column: span 2;
-            text-align: left;
-            margin-bottom: 5px;
-        }
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin-bottom: 20px;
-            border: none;
-            border-radius: 5px;
-        }
-        .contact-form button {
-            grid-column: span 2;
-            padding: 10px;
-            background: #ffcc00;
-            color: #333;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: background 0.3s;
-        }
-        .contact-form button:hover {
-            background: #ffaa00;
-        }
-        footer {
-            background: #222;
-            padding: 10px;
-            text-align: center;
-            border-top: 2px solid #444;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .secret {
-            display: none;
-        }
-        .show-secret {
-            cursor: pointer;
-            color: #ffcc00;
-            text-decoration: underline;
-        }
-
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        @keyframes slideIn {
-            from { transform: translateY(50px); opacity: 0; }
-            to { transform: translateY(0); opacity: 1; }
-        }
-    </style>
-    <script>
-        function toggleSecret() {
-            const secret = document.getElementById('secret');
-            if (secret.style.display === 'none' || secret.style.display === '') {
-                secret.style.display = 'block';
-            } else {
-                secret.style.display = 'none';
-            }
-        }
-    </script>
+    <title>Fun Warrior Website</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Warrier Stuff</h1>
-    </header>
-    <nav>
-        <a href="#about">About</a>
-        <a href="#interests">Interests</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="about">
-        <h2>My name is Warrier</h2>
-        <div class="content">
-            <p>Hello! My name is Warrier and I have several interests that I would like to share with you:</p>
-        </div>
-    </section>
-    <section id="interests">
-        <h2>Interests</h2>
-        <div class="content">
-            <ul>
-                <li>Coding</li>
-                <li>Development</li>
-                <li>Playing Minecraft</li>
-            </ul>
-        </div>
-        <div class="content">
-            <p>Click below to reveal a secret message:</p>
-            <p class="show-secret" onclick="toggleSecret()">Show Secret</p>
-            <p id="secret" class="secret">Anyone Seeing it, YOU ARE DUMB!(MAZAAAK)</p>
-        </div>
-    </section>
-    <section id="Few project">
-        <h2>Contact</h2>
-        <div class="content">
-            <div>
-               <h1>discord.gg/minesurf (pakistan #1 Server)
-                <h1>Discord.gg/virtuolnet (my Own founded company)
-                <h1>Tbnodes (my other company)</h2>
-                </h1>
-               </h1>
+    <div class="container">
+        <header>
+            <h1>Welcome to the Fun Warrior World!</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#skills">My Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section id="about">
+            <div class="content">
+                <h2>About Me</h2>
+                <p>I am a skilled warrior with expertise in development, hacking, programming, and gaming. Let's have some fun exploring my skills!</p>
             </div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; Made By Thewarrier.</p>
-    </footer>
+        </section>
+
+        <section id="skills">
+            <div class="content">
+                <h2>My Skills</h2>
+                <ul>
+                    <li>Development</li>
+                    <li>Hacking</li>
+                    <li>Programming</li>
+                    <li>Playing Games</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="content">
+                <h2>Projects</h2>
+                <!-- Your projects can be listed here with descriptions and links -->
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="content">
+                <h2>Contact</h2>
+                <p>You can reach me at: your@email.com</p>
+            </div>
+        </section>
+    </div>
+
+    <audio id="background-music" autoplay loop>
+        <source src="https://www.bensound.com/bensound-music/bensound-sunny.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
